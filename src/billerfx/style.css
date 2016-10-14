@@ -1,0 +1,115 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 24, 2014, 4:52:26 PM
+    Author     : Ayush Jain
+*/
+
+#butt1 {
+    -fx-background-image: url("../Data/window-min.png");
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+
+#butt1:hover {
+    -fx-background-image: url("../Data/window-min-over.png");
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+
+#butt2 {
+    -fx-background-image: url("../Data/window-close.png");
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+
+#butt2:hover {
+    -fx-background-image: url("../Data/window-close-over.png");
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+
+#butt3 {
+    -fx-background-image: url("../Data/reload.png");
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+
+#butt4 {
+    -fx-background-image: url("../Data/settings.png");
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+
+#butt5 {
+    -fx-background-image: url("../Data/search-clear.png");
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+
+#butt5:hover {
+    -fx-background-image: url("../Data/search-clear-over.png");
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+
+#butt6 {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+#Content {
+    -fx-background-image: url("../Data/texture.png");
+    -fx-background-repeat: repeat;
+}
+
+#but1 {
+    -fx-background-image: url("../Data/invoice.png");
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+
+#but2 {
+    -fx-background-image: url("../Data/invoices.png");
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+
+#but3 {
+    -fx-background-image: url("../Data/customer.png");
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+
+#but4 {
+    -fx-background-image: url("../Data/inventory.png");
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+
+#but5 {
+    -fx-background-image: url("../Data/about.png");
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+
+#ap {
+    -fx-background-image: url("../Data/texture.png");
+    -fx-background-repeat: repeat;
+}

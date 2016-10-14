@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="billerfx.FXMLCustomerController">
+  <children>
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <BorderPane layoutX="0.0" layoutY="0.0" prefHeight="600.0" prefWidth="800.0">
+      <bottom>
+        <ImageView id="mid-bar-right.png" fitHeight="29.0" fitWidth="799.9998779296875">
+          <image>
+            <Image url="@../Data/mid-bar-right.png" preserveRatio="true" smooth="true" />
+          </image>
+        </ImageView>
+      </bottom>
+      <center>
+        <TableView fx:id="t1" prefHeight="200.0" prefWidth="200.0">
+          <columns>
+            <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="83.0" sortable="true" text="ID" fx:id="t1c1" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="175.0" sortable="true" text="Name" fx:id="t1c2" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="131.0" sortable="true" text="Phone No" fx:id="t1c3" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="133.0" sortable="true" text="Email" fx:id="t1c4" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="141.0" sortable="true" text="Address" fx:id="t1c5" />
+            <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="135.0" sortable="true" text="No of times visited" fx:id="t1c6" />
+          </columns>
+        </TableView>
+      </center>
+      <top>
+        <AnchorPane minHeight="199.9998779296875" prefHeight="199.9998779296875" prefWidth="800.0">
+          <children>
+            <ImageView id="tree-background.png" fitHeight="106.0" fitWidth="799.9998779296875" layoutX="0.0" layoutY="66.0">
+              <image>
+                <Image url="@../Data/tree-background.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="top-bar.png" fitHeight="66.0" fitWidth="799.9999000000025" layoutX="0.0" layoutY="0.0">
+              <image>
+                <Image url="@../Data/top-bar.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="mid-bar.png" fitHeight="29.0" fitWidth="799.999977929685" layoutX="0.0" layoutY="172.0">
+              <image>
+                <Image url="@../Data/mid-bar.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="biller.png" layoutX="21.0" layoutY="0.0">
+              <image>
+                <Image url="@../Data/biller.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="mid-bar-left.png" fitHeight="29.0" fitWidth="799.9998779296875" layoutX="0.0" layoutY="67.0">
+              <image>
+                <Image url="@../Data/mid-bar-left.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <Label layoutX="464.0" layoutY="71.0" prefHeight="22.0" prefWidth="127.0" text="Customers">
+              <font>
+                <Font name="System Bold" size="16.0" fx:id="x2" />
+              </font>
+            </Label>
+            <ImageView id="search-box.png" layoutX="472.0" layoutY="137.0">
+              <image>
+                <Image url="@../Data/search-box.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ChoiceBox fx:id="cb1" layoutX="678.0" layoutY="137.0" prefHeight="23.0" prefWidth="102.0">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Name" />
+                  <String fx:value="Phone" />
+                  <String fx:value="Email" />
+                  <String fx:value="Address" />
+                </FXCollections>
+              </items>
+            </ChoiceBox>
+            <Label layoutX="611.0" layoutY="141.0" prefWidth="61.0" text="Search By:">
+              <font>
+                <Font name="System Bold" size="12.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label font="$x1" layoutX="422.0" layoutY="141.0" text="Search:" />
+            <ImageView id="icon-overlay.png" fitHeight="76.0" fitWidth="275.0" layoutX="0.0" layoutY="96.0">
+              <image>
+                <Image url="@../Data/icon-overlay.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="1.png" fitHeight="134.0" fitWidth="12.0" layoutX="269.0" layoutY="66.0">
+              <image>
+                <Image url="@../Data/1.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="1.png" fitHeight="29.0" fitWidth="12.0" layoutX="269.0" layoutY="65.0">
+              <image>
+                <Image url="@../Data/1.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="1.png" fitHeight="29.0" fitWidth="12.0" layoutX="269.0" layoutY="171.0">
+              <image>
+                <Image url="@../Data/1.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <Label font="$x2" layoutX="116.0" layoutY="71.0" text="Menu" />
+            <Button fx:id="butt1" layoutX="752.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleButtonAction2" text="" />
+            <Button fx:id="butt2" layoutX="772.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleButtonAction" text="" />
+            <Button fx:id="butt3" layoutX="767.0" layoutY="176.0" mnemonicParsing="false" onAction="#searchCustomers" text="" />
+            <Label font="$x1" layoutX="719.0" layoutY="178.0" text="Reload:" />
+            <Button fx:id="but1" layoutX="19.0" layoutY="117.0" mnemonicParsing="false" onAction="#handleButtonAction4" prefHeight="32.0" prefWidth="32.0" text="">
+              <tooltip>
+                <Tooltip text="New Invoice" />
+              </tooltip>
+            </Button>
+            <Button fx:id="but2" layoutX="59.0" layoutY="117.0" mnemonicParsing="false" onAction="#handleButtonAction51" prefHeight="32.0" prefWidth="32.0" text="">
+              <tooltip>
+                <Tooltip text="Invoices" />
+              </tooltip>
+            </Button>
+            <Button fx:id="but3" layoutX="99.0" layoutY="117.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" text="">
+              <tooltip>
+                <Tooltip text="Customers" />
+              </tooltip>
+            </Button>
+            <Button fx:id="but4" layoutX="139.0" layoutY="117.0" mnemonicParsing="false" onAction="#handleButtonAction61" prefHeight="32.0" prefWidth="32.0" text="">
+              <tooltip>
+                <Tooltip text="Inventory" />
+              </tooltip>
+            </Button>
+            <Button id="but5" layoutX="219.0" layoutY="117.0" mnemonicParsing="false" onAction="#handleButtonAction71" prefHeight="32.0" prefWidth="32.0" text="">
+              <tooltip>
+                <Tooltip text="Info" />
+              </tooltip>
+            </Button>
+            <Button fx:id="butt4" layoutX="179.0" layoutY="117.0" mnemonicParsing="false" onAction="#handleButtonAction3" prefHeight="32.0" prefWidth="32.0" text="">
+              <tooltip>
+                <Tooltip text="Settings" />
+              </tooltip>
+            </Button>
+            <Button fx:id="butt5" layoutX="578.0" layoutY="143.0" mnemonicParsing="false" onAction="#clear" text="" />
+            <TextField fx:id="butt6" layoutX="486.0" layoutY="138.0" onAction="#searchCustomers" prefWidth="85.0" />
+          </children>
+        </AnchorPane>
+      </top>
+    </BorderPane>
+  </children>
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
+</AnchorPane>

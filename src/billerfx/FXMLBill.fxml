@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="billerfx.FXMLBillController">
+  <children>
+    <BorderPane layoutX="0.0" layoutY="0.0" prefHeight="600.0" prefWidth="800.0">
+      <bottom>
+        <ImageView id="mid-bar-right.png" fitHeight="29.0" fitWidth="799.9998779296875">
+          <image>
+            <Image url="@../Data/mid-bar-right.png" preserveRatio="true" smooth="true" />
+          </image>
+        </ImageView>
+      </bottom>
+      <center>
+        <AnchorPane id="ap" prefHeight="200.0" prefWidth="200.0">
+          <children>
+            <Label layoutX="195.0" layoutY="31.0" text="Customer Name:" textFill="WHITE">
+              <font>
+                <Font name="System Bold" size="12.0" fx:id="x1" />
+              </font>
+            </Label>
+            <TextField fx:id="d" layoutX="297.0" layoutY="28.0" prefWidth="146.0" />
+            <Label font="$x1" layoutX="454.0" layoutY="31.0" text="Phone:" textFill="WHITE" />
+            <TextField fx:id="e" layoutX="500.0" layoutY="28.0" prefWidth="97.0" />
+            <Label layoutX="13.0" layoutY="1.0" text="New Invoice:" textFill="WHITE" underline="true" wrapText="false">
+              <font>
+                <Font name="System Bold" size="16.0" fx:id="x3" />
+              </font>
+            </Label>
+            <Label font="$x1" layoutX="606.0" layoutY="31.0" text="Email:" textFill="WHITE" />
+            <TextField fx:id="f" layoutX="647.0" layoutY="28.0" prefWidth="141.0" />
+            <Label font="$x1" layoutX="241.0" layoutY="59.0" text="Address:" textFill="WHITE" />
+            <TextArea fx:id="g" layoutX="297.0" layoutY="59.0" prefHeight="37.0" prefWidth="203.0" wrapText="true" />
+            <Label layoutX="15.0" layoutY="30.0" text="Invoice No:" textFill="WHITE">
+              <font>
+                <Font name="System Bold" size="14.0" fx:id="x2" />
+              </font>
+            </Label>
+            <Label fx:id="a" font="$x2" layoutX="96.0" layoutY="31.0" prefWidth="71.0" text="" textFill="WHITE" visible="true" />
+            <Label font="$x2" layoutX="15.0" layoutY="53.0" text="Date:" textFill="WHITE" />
+            <Label fx:id="b" font="$x2" layoutX="56.0" layoutY="53.0" prefWidth="107.99990844726562" text="" textFill="WHITE" visible="true" />
+            <Label font="$x2" layoutX="15.0" layoutY="77.0" text="Table No:" textFill="WHITE" />
+            <Label fx:id="c" font="$x2" layoutX="88.0" layoutY="77.0" prefWidth="75.00009999999747" text="" textFill="WHITE" visible="true" />
+            <Separator layoutX="171.0" layoutY="30.0" orientation="VERTICAL" prefHeight="66.0" />
+            <Separator layoutX="15.0" layoutY="104.0" prefWidth="773.0" />
+            <Label font="$x2" layoutX="15.0" layoutY="112.0" text="Items:" textFill="WHITE" />
+            <Button layoutX="77.0" layoutY="112.0" mnemonicParsing="false" onAction="#handleButtonAction51" text="Add Item" />
+            <Button layoutX="160.0" layoutY="112.0" mnemonicParsing="false" onAction="#handleButtonAction52" text="Remove Item" />
+            <Label font="$x2" layoutX="169.0" layoutY="342.0" text="Total Including Discount:" textAlignment="RIGHT" textFill="WHITE" />
+            <Label fx:id="i" font="$x2" layoutX="362.0" layoutY="342.0" prefWidth="90.9998779296875" text="0.0" textFill="WHITE" visible="true" />
+            <Label fx:id="aa" font="$x2" layoutX="506.0" layoutY="301.0" text="Tax 1:" textAlignment="RIGHT" textFill="WHITE" />
+            <Label fx:id="k" font="$x2" layoutX="690.0" layoutY="301.0" prefWidth="90.9998779296875" text="0.0" textFill="WHITE" visible="true" />
+            <Label fx:id="bb" font="$x2" layoutX="506.0" layoutY="320.0" text="Tax 2:" textAlignment="RIGHT" textFill="WHITE" />
+            <Label fx:id="l" font="$x2" layoutX="690.0" layoutY="320.0" prefWidth="91.0" text="0.0" textFill="WHITE" visible="true" />
+            <Label font="$x2" layoutX="169.0" layoutY="307.0" text="Discount (%):" textFill="WHITE" />
+            <TextField fx:id="n" layoutX="362.0" layoutY="306.0" prefWidth="76.0" text="0.0" />
+            <Label font="$x2" layoutX="506.0" layoutY="341.0" text="Grand Total:" textAlignment="RIGHT" textFill="WHITE" />
+            <Label fx:id="m" font="$x2" layoutX="690.0" layoutY="342.0" prefWidth="91.00009999999747" text="0.0" textFill="WHITE" visible="true" />
+            <Separator layoutX="459.0" layoutY="279.0" orientation="VERTICAL" prefHeight="88.0" />
+            <Separator layoutX="469.0" layoutY="339.0" prefWidth="319.0" />
+            <Label font="$x2" layoutX="169.0" layoutY="283.0" text="Total:" textAlignment="RIGHT" textFill="WHITE" />
+            <Label fx:id="h" font="$x2" layoutX="362.0" layoutY="283.0" prefWidth="91.0" text="0.0" textFill="WHITE" visible="true" />
+            <Separator layoutX="155.0" layoutY="339.0" prefWidth="299.0" />
+            <Label font="$x2" layoutX="506.0" layoutY="283.0" text="Total Including Discount:" textAlignment="RIGHT" textFill="WHITE" />
+            <Label fx:id="j" font="$x2" layoutX="690.0" layoutY="283.0" prefWidth="91.0" text="0.0" textFill="WHITE" visible="true" />
+            <TableView id="h" fx:id="t1" layoutX="14.0" layoutY="140.0" prefHeight="134.0" prefWidth="773.0">
+              <columns>
+                <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="68.0" sortable="true" text="ID" fx:id="t1c1" />
+                <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="165.0" sortable="true" text="Name" fx:id="t1c2" />
+                <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="89.0" sortable="true" text="Type" fx:id="t1c3" />
+                <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="83.0" sortable="true" text="Category" fx:id="t1c4" />
+                <TableColumn editable="true" maxWidth="5000.0" minWidth="10.0" prefWidth="77.0" sortable="true" text="Discount" fx:id="t1c5" />
+                <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="83.0" sortable="true" text="Price" fx:id="t1c6" />
+                <TableColumn editable="true" maxWidth="5000.0" minWidth="10.0" prefWidth="100.0" sortable="true" text="Quantity" fx:id="t1c7" />
+                <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="107.0" sortable="true" text="Total" fx:id="t1c8" />
+              </columns>
+            </TableView>
+          </children>
+        </AnchorPane>
+      </center>
+      <top>
+        <AnchorPane minHeight="199.9998779296875" prefHeight="199.9998779296875" prefWidth="800.0">
+          <children>
+            <ImageView id="tree-background.png" fitHeight="106.0" fitWidth="799.9998779296875" layoutX="0.0" layoutY="66.0">
+              <image>
+                <Image url="@../Data/tree-background.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="top-bar.png" fx:id="imv" fitHeight="66.0" fitWidth="799.9999000000025" layoutX="0.0" layoutY="0.0">
+              <image>
+                <Image url="@../Data/top-bar.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="mid-bar.png" fitHeight="29.0" fitWidth="799.999977929685" layoutX="0.0" layoutY="172.0">
+              <image>
+                <Image url="@../Data/mid-bar.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="biller.png" layoutX="21.0" layoutY="0.0">
+              <image>
+                <Image url="@../Data/biller.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="mid-bar-left.png" fitHeight="29.0" fitWidth="799.9998779296875" layoutX="0.0" layoutY="67.0">
+              <image>
+                <Image url="@../Data/mid-bar-left.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <Label font="$x3" layoutX="481.0" layoutY="71.0" prefHeight="22.0" prefWidth="95.0" text="New Invoice" />
+            <ImageView id="icon-overlay.png" fitHeight="76.0" fitWidth="275.0" layoutX="0.0" layoutY="96.0">
+              <image>
+                <Image url="@../Data/icon-overlay.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="1.png" fitHeight="134.0" fitWidth="12.0" layoutX="269.0" layoutY="66.0">
+              <image>
+                <Image url="@../Data/1.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="1.png" fitHeight="29.0" fitWidth="12.0" layoutX="269.0" layoutY="65.0">
+              <image>
+                <Image url="@../Data/1.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="1.png" fitHeight="29.0" fitWidth="12.0" layoutX="269.0" layoutY="171.0">
+              <image>
+                <Image url="@../Data/1.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <Label font="$x3" layoutX="116.0" layoutY="71.0" text="Menu" />
+            <Button fx:id="butt1" layoutX="752.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleButtonAction2" text="" />
+            <Button fx:id="butt2" layoutX="772.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleButtonAction" text="" />
+            <Button fx:id="but1" disable="true" layoutX="19.0" layoutY="117.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" text="">
+              <tooltip>
+                <Tooltip text="New Invoice" />
+              </tooltip>
+            </Button>
+            <Button fx:id="but2" disable="true" layoutX="59.0" layoutY="117.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" text="">
+              <tooltip>
+                <Tooltip text="Invoices" />
+              </tooltip>
+            </Button>
+            <Button fx:id="but3" disable="true" layoutX="99.0" layoutY="117.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" text="">
+              <tooltip>
+                <Tooltip text="Customers" />
+              </tooltip>
+            </Button>
+            <Button fx:id="but4" disable="true" layoutX="139.0" layoutY="117.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" text="">
+              <tooltip>
+                <Tooltip text="Inventory" />
+              </tooltip>
+            </Button>
+            <Button id="but5" disable="true" layoutX="219.0" layoutY="117.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" text="">
+              <tooltip>
+                <Tooltip text="Info" />
+              </tooltip>
+            </Button>
+            <Button fx:id="butt4" disable="true" layoutX="179.0" layoutY="117.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" text="">
+              <tooltip>
+                <Tooltip text="Settings" />
+              </tooltip>
+            </Button>
+            <Button font="$x2" layoutX="636.0" layoutY="121.0" mnemonicParsing="false" onAction="#handleButtonAction54" text="Discard Invoice" />
+            <Button font="$x2" layoutX="322.0" layoutY="121.0" mnemonicParsing="false" onAction="#handleButtonAction53" text="Print Invoice" />
+          </children>
+        </AnchorPane>
+      </top>
+    </BorderPane>
+  </children>
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="billerfx.FXMLInfoController">
+  <children>
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <BorderPane layoutX="0.0" layoutY="0.0" prefHeight="600.0" prefWidth="800.0">
+      <bottom>
+        <ImageView id="mid-bar-right.png" fitHeight="29.0" fitWidth="799.9998779296875">
+          <image>
+            <Image url="@../Data/mid-bar-right.png" preserveRatio="true" smooth="true" />
+          </image>
+        </ImageView>
+      </bottom>
+      <center>
+        <AnchorPane fx:id="ap" prefHeight="200.0" prefWidth="200.0">
+          <children>
+            <Label layoutX="346.0" layoutY="211.0" text="Developed By:" textFill="WHITE">
+              <font>
+                <Font name="System Bold" size="16.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label font="$x1" layoutX="360.0" layoutY="247.0" text="Ayush Jain" textFill="WHITE" />
+            <Label font="$x1" layoutX="295.0" layoutY="269.0" text="Email: ayush.cs11@iitp.ac.in" textFill="WHITE" />
+            <Label layoutX="376.0" layoutY="14.0" text="Info" textFill="WHITE">
+              <font>
+                <Font name="System Bold" size="25.0" />
+              </font>
+            </Label>
+            <ImageView id="biller.png" layoutX="284.0" layoutY="52.0">
+              <image>
+                <Image url="@../Data/biller.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <Label font="$x1" layoutX="358.0" layoutY="118.0" text="Version 1.0" textFill="WHITE" />
+            <Label font="$x1" layoutX="276.0" layoutY="153.0" text="A JavaFX based Invoice software." textFill="WHITE" />
+          </children>
+        </AnchorPane>
+      </center>
+      <top>
+        <AnchorPane minHeight="199.9998779296875" prefHeight="199.9998779296875" prefWidth="800.0">
+          <children>
+            <ImageView id="tree-background.png" fitHeight="106.0" fitWidth="799.9998779296875" layoutX="0.0" layoutY="66.0">
+              <image>
+                <Image url="@../Data/tree-background.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="top-bar.png" fitHeight="66.0" fitWidth="799.9999000000025" layoutX="0.0" layoutY="0.0">
+              <image>
+                <Image url="@../Data/top-bar.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="mid-bar.png" fitHeight="29.0" fitWidth="799.999977929685" layoutX="0.0" layoutY="172.0">
+              <image>
+                <Image url="@../Data/mid-bar.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="biller.png" layoutX="21.0" layoutY="0.0">
+              <image>
+                <Image url="@../Data/biller.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="mid-bar-left.png" fitHeight="29.0" fitWidth="799.9998779296875" layoutX="0.0" layoutY="67.0">
+              <image>
+                <Image url="@../Data/mid-bar-left.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <Label font="$x1" layoutX="513.0" layoutY="71.0" prefHeight="22.0" prefWidth="32.0" text="Info" />
+            <ImageView id="icon-overlay.png" fitHeight="76.0" fitWidth="275.0" layoutX="0.0" layoutY="96.0">
+              <image>
+                <Image url="@../Data/icon-overlay.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="1.png" fitHeight="134.0" fitWidth="12.0" layoutX="269.0" layoutY="66.0">
+              <image>
+                <Image url="@../Data/1.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="1.png" fitHeight="29.0" fitWidth="12.0" layoutX="269.0" layoutY="65.0">
+              <image>
+                <Image url="@../Data/1.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <ImageView id="1.png" fitHeight="29.0" fitWidth="12.0" layoutX="269.0" layoutY="171.0">
+              <image>
+                <Image url="@../Data/1.png" preserveRatio="true" smooth="true" />
+              </image>
+            </ImageView>
+            <Label font="$x1" layoutX="116.0" layoutY="71.0" text="Menu" />
+            <Button fx:id="butt1" layoutX="752.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleButtonAction2" text="" />
+            <Button fx:id="butt2" layoutX="772.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleButtonAction" text="" />
+            <Button fx:id="but1" layoutX="19.0" layoutY="117.0" mnemonicParsing="false" onAction="#handleButtonAction4" prefHeight="32.0" prefWidth="32.0" text="">
+              <tooltip>
+                <Tooltip text="New Invoice" />
+              </tooltip>
+            </Button>
+            <Button fx:id="but2" layoutX="59.0" layoutY="117.0" mnemonicParsing="false" onAction="#handleButtonAction51" prefHeight="32.0" prefWidth="32.0" text="">
+              <tooltip>
+                <Tooltip text="Invoices" />
+              </tooltip>
+            </Button>
+            <Button fx:id="but3" layoutX="99.0" layoutY="117.0" mnemonicParsing="false" onAction="#handleButtonAction5" prefHeight="32.0" prefWidth="32.0" text="">
+              <tooltip>
+                <Tooltip text="Customers" />
+              </tooltip>
+            </Button>
+            <Button fx:id="but4" layoutX="139.0" layoutY="117.0" mnemonicParsing="false" onAction="#handleButtonAction61" prefHeight="32.0" prefWidth="32.0" text="">
+              <tooltip>
+                <Tooltip text="Inventory" />
+              </tooltip>
+            </Button>
+            <Button id="but5" layoutX="219.0" layoutY="117.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="32.0" text="">
+              <tooltip>
+                <Tooltip text="Info" />
+              </tooltip>
+            </Button>
+            <Button fx:id="butt4" layoutX="179.0" layoutY="117.0" mnemonicParsing="false" onAction="#handleButtonAction3" prefHeight="32.0" prefWidth="32.0" text="">
+              <tooltip>
+                <Tooltip text="Settings" />
+              </tooltip>
+            </Button>
+            <TextField fx:id="butt6" layoutX="486.0" layoutY="138.0" prefWidth="85.0" />
+          </children>
+        </AnchorPane>
+      </top>
+    </BorderPane>
+  </children>
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
+</AnchorPane>

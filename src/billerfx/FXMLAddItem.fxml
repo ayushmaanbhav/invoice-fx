@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="300.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="billerfx.FXMLAddItemController">
+  <bottom>
+    <ImageView id="bottom-bar.png" fitHeight="29.0" fitWidth="400.0">
+      <image>
+        <Image url="@../Data/bottom-bar.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+  </bottom>
+  <center>
+    <AnchorPane id="ap" prefHeight="200.0" prefWidth="200.0">
+      <children>
+        <ImageView id="mid-bar-left.png" fitHeight="29.0" fitWidth="400.0" layoutX="0.0" layoutY="0.0">
+          <image>
+            <Image url="@../Data/mid-bar-left.png" preserveRatio="true" smooth="true" />
+          </image>
+        </ImageView>
+        <Label layoutX="169.0" layoutY="5.0" text="Add Item">
+          <font>
+            <Font name="System Bold" size="14.0" />
+          </font>
+        </Label>
+        <Button fx:id="ok" disable="true" layoutX="262.0" layoutY="167.0" mnemonicParsing="false" onAction="#handleButtonAction2" text="ok">
+          <font>
+            <Font size="14.0" fx:id="x1" />
+          </font>
+        </Button>
+        <Button font="$x1" layoutX="321.0" layoutY="167.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Cancel" />
+        <Label layoutX="62.0" layoutY="39.0" text="Item Name:" textFill="WHITE">
+          <font>
+            <Font name="System Bold" size="12.0" fx:id="x2" />
+          </font>
+        </Label>
+        <Label font="$x2" layoutX="16.0" layoutY="67.0" text="ID:" textFill="WHITE" visible="true" />
+        <Label fx:id="a" font="$x2" layoutX="62.0" layoutY="67.0" prefWidth="121.0" text="" textFill="WHITE" visible="true" />
+        <Label font="$x2" layoutX="16.0" layoutY="88.0" text="Name:" textFill="WHITE" visible="true" />
+        <Label fx:id="b" font="$x2" layoutX="62.0" layoutY="88.0" prefWidth="145.0" text="" textFill="WHITE" visible="true" />
+        <Label font="$x2" layoutX="16.0" layoutY="110.0" text="Price:" textFill="WHITE" visible="true" />
+        <Label fx:id="e" font="$x2" layoutX="62.0" layoutY="110.0" prefWidth="109.0" text="" textFill="WHITE" visible="true" />
+        <Label font="$x2" layoutX="215.0" layoutY="89.0" text="Category:" textFill="WHITE" visible="true" />
+        <Label fx:id="d" font="$x2" layoutX="275.0" layoutY="88.0" prefWidth="109.0" text="" textFill="WHITE" visible="true" />
+        <Label font="$x2" layoutX="215.0" layoutY="68.0" text="Type:" textFill="WHITE" visible="true" />
+        <Label fx:id="c" font="$x2" layoutX="275.0" layoutY="67.0" prefWidth="109.0" text="" textFill="WHITE" visible="true" />
+        <Label font="$x2" layoutX="215.0" layoutY="113.0" text="Quantity:" textFill="WHITE" visible="true" />
+        <TextField id="f" fx:id="tf" disable="true" layoutX="275.0" layoutY="110.0" prefWidth="109.0" text="1" visible="true" />
+        <Label font="$x2" layoutX="16.0" layoutY="133.0" text="Glass Size:" textFill="WHITE" visible="true" />
+        <ChoiceBox id="g" fx:id="chb" disable="true" layoutX="88.0" layoutY="131.0" prefWidth="109.0" visible="true">
+          <items>
+            <FXCollections fx:factory="observableArrayList" />
+          </items>
+        </ChoiceBox>
+        <ComboBox fx:id="cb" editable="true" layoutX="146.0" layoutY="37.0" prefHeight="21.0" prefWidth="196.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+            </FXCollections>
+          </items>
+        </ComboBox>
+      </children>
+    </AnchorPane>
+  </center>
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
+  <top>
+    <AnchorPane prefHeight="66.0" prefWidth="400.0">
+      <children>
+        <ImageView id="top-bar.png" fx:id="imv" fitHeight="66.0" fitWidth="400.0" layoutX="0.0" layoutY="0.0">
+          <image>
+            <Image url="@../Data/top-bar.png" preserveRatio="true" smooth="true" />
+          </image>
+        </ImageView>
+        <ImageView id="biller.png" layoutX="7.0" layoutY="0.0">
+          <image>
+            <Image url="@../Data/biller.png" preserveRatio="true" smooth="true" />
+          </image>
+        </ImageView>
+      </children>
+    </AnchorPane>
+  </top>
+</BorderPane>
