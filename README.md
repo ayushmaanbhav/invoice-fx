@@ -1,6 +1,6 @@
 # BillerFX
 
-'''It is an invoicing application for restaurants and hotels developed in JavaFX.'''
+**It is an invoicing application for restaurants and hotels developed in JavaFX.**
 
 * Maintains database in MySql hence multiple applications can be installed, sharing the information of clients and orders.
 * Keeps track of the orders received from individual tables and generates a printable pdf invoice (automatically calculates the discounts and taxes) in the end.
